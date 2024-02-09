@@ -1,0 +1,104 @@
+.sidebar {
+    background-color: rgb(251, 251, 255);
+    flex: 1;
+    height: calc(100vh - 50px);
+    position: sticky;
+    top: 50px;
+    width: fit-content !important;
+}
+
+  @media (max-width: 768px) {
+    .sidebar {
+        width: 100px;
+    }
+  }
+
+.sidebarContainer {
+    padding: 20px;
+    color:  #555;
+}
+
+.sidebarMenu {
+    margin-bottom: 10px;
+}
+
+.sidebarTitle {
+    font-size: 13px;
+    color: rgb(187, 186, 186);
+}
+
+.sidebarList {
+    padding: 5px;
+} 
+
+.sidebarItems {
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+/* .sidebarItems.active , .sidebarItems:hover {
+    background-color: rgb(240, 240, 255);
+} */
+
+/* .sidebar a.active {
+    background-color: rgb(240, 240, 255) !important;
+} */
+
+.open {
+    transform: translateX(0);
+  }
+  
+   /* .opensidebar {
+     margin-left: 280px;
+  } */
+
+.sidebarIcon {
+    margin-right: 5px;
+    font-size: 20px;
+  }
+
+
+
+/*  */
+
+/* Add this CSS in your stylesheet */
+.sidebar {
+    /* ... your existing styles ... */
+  
+    @media only screen and (max-width: 768px) {
+      /* ... your existing styles ... */
+  
+      /* Hide the sidebar by default on smaller screens */
+      display: none;
+      transition: 0.5s;
+  
+    }
+
+    
+  
+    /* ... your existing styles ... */
+  }
+
+
+    @media only screen and (max-width: 768px) {
+        /* Display the button on smaller screens */
+        .sidebar.show {
+            display: flex;
+        }
+      }
+  
+  
+  .toggleButton {
+    /* Style your toggle button as needed */
+    display: none; /* Hide the button on larger screens */
+  
+    @media only screen and (max-width: 768px) {
+      /* Display the button on smaller screens */
+      display: block;
+    }
+  }
+  
+  

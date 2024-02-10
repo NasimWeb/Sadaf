@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./SingleUser.css";
+import "./singleUser.css";
 import { Link, useParams } from "react-router-dom";
 import PublishIcon from "@mui/icons-material/Publish";
 import { useDispatch, useSelector } from "react-redux";

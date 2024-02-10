@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import './courses.css'
+import './Courses.css'
 import { DataGrid } from '@mui/x-data-grid'
 import { Link } from 'react-router-dom';
 import {useDispatch, useSelector} from 'react-redux'

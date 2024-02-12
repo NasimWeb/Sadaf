@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./singleUser.css";
-import { Link, useParams } from "react-router-dom";
-import PublishIcon from "@mui/icons-material/Publish";
+import {  useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { getUsersFromServer } from "../../../Redux/store/users";
 import Loader from "../../../Components/loader/loader";
@@ -48,7 +47,6 @@ export default function SingleUser() {
     localStorage.setItem('lastname', lastname);
     localStorage.setItem('email',email);
   }, [username, firstname, lastname,email]);
-
 
 
  

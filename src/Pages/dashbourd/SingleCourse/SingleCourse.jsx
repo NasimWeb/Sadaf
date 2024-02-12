@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./SingleCourse.css";
 import Loader from "../../../Components/loader/loader";
-import Swal from "sweetalert2";
-import { Link, useParams } from "react-router-dom";
-import PublishIcon from "@mui/icons-material/Publish";
+import {  useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import {getCoursesFromServer} from '../../../Redux/store/courses'
 import { getCategoriesFromServer } from "../../../Redux/store/categories";
@@ -61,6 +59,9 @@ export default function SingleCourse() {
   },[courseTitle,coursePrice,courseCategory,discountCourse,desc])
 
 
+  if(loading) {
+   return <Loader />
+  }
 
   return (
     <div className="product">

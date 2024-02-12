@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./SingleArticle.css";
-import { Link, useParams } from "react-router-dom";
-import PublishIcon from "@mui/icons-material/Publish";
+import {  useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { getArticlesFromServer } from "../../../Redux/store/articles";
 import Loader from "../../../Components/loader/loader";

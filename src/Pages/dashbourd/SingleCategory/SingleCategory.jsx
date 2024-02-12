@@ -1,9 +1,8 @@
 import React, { useEffect , useState } from 'react'
-import './singleCategory.css'
+import './SingleCategory.css'
 import Loader from '../../../Components/loader/loader';
 import Swal from 'sweetalert2'
-import { Link, useParams } from 'react-router-dom'
-import PublishIcon from "@mui/icons-material/Publish";
+import {  useParams } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux';
 import {getCategoriesFromServer} from '../../../Redux/store/categories' 
 

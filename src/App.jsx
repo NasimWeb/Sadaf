@@ -35,12 +35,10 @@ useEffect(() => {
 
   return (
    <darkmoodContext.Provider value={{darkMood,setDarkMood}}>
-   <Topbar darkMood={darkMood} setDarkMood={setDarkMood} />
+   <Topbar  show={show} setShow={setShow} />
    <div className={`container-page flex-wrap  `}>
     <Sidebar darkMood={darkMood}  show={show} setShow={setShow}  />
-    <div>   
-       <button className='userListEdit opensidebar toggleButton'  onClick={() => setShow(!show)}><i class="fa-solid fa-bars"></i></button>
-    </div>
+ 
    {router}
    </div>
    </darkmoodContext.Provider>

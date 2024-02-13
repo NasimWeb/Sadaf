@@ -5,6 +5,10 @@
     font-family: "Source Sans Pro", sans-serif;
 }
 
+html,body {
+    height: 100%;
+}
+
 ul {
     list-style-type: none;
 }
@@ -109,3 +113,4 @@ body.dark-mode .MuiTablePagination-selectLabel  {
 body.dark-mode .MuiTablePagination-displayedRows {
     color: #ffffff;
 }
+

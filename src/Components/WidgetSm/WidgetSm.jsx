@@ -1,11 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './WidgetSm.css'
 import VisibilityIcon from "@mui/icons-material/Visibility";
 import { userRows } from '../../Data';
+import { darkmoodContext } from '../../Contexts/darkmood';
 
 export default function WidgetSm() {
 
-  
+  const { darkMood , setDarkMood} = useContext(darkmoodContext)
 
 
   return (
@@ -23,7 +24,7 @@ export default function WidgetSm() {
                   <span className="widgetSmUserName">{user.username}</span>
                   <span className="widgetSmUserTitle">{user.status}</span>
                 </div>
-                <button className="widgetSmButton">
+                <button className={`widgetSmButton ${darkMood ? 'bg-transparent' : ''}`}>
                   <VisibilityIcon className="widgetSmIcon" />
                 </button>
               </li>

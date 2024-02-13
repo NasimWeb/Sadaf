@@ -5,16 +5,21 @@ import LanguageIcon from "@mui/icons-material/Language";
 import SettingsIcon from "@mui/icons-material/Settings";
 import { darkmoodContext } from "../../Contexts/darkmood";
 
-export default function Topbar() {
-
-  const {darkMood , setDarkMood} = useContext(darkmoodContext)
-
-
+export default function Topbar({show , setShow}) {
+  const { darkMood, setDarkMood } = useContext(darkmoodContext);
   return (
     <>
-      <section className={`Topbar text-dark ${darkMood ? 'dark-mode' : ''}`}>
+      <section className={`Topbar text-dark ${darkMood ? "dark-mode" : ""}`}>
         <section className="topbarcontainer">
-          <section className="topbarLeft">
+          <section className="topbarLeft flex ">
+          <div>
+              <button
+                className="userListEdit opensidebar toggleButton"
+                onClick={() => setShow(!show)}
+              >
+                <i class="fa-solid fa-bars"></i>
+              </button>
+            </div>
             <div>
               <span className="logo">Sadaf</span>
             </div>

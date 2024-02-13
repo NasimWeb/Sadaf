@@ -16,6 +16,7 @@ export default function Sidebar({ show , setShow  }) {
     <>
       <section className={`sidebar   ${show ? "show" : ""} ${darkMood ? 'dark-mode' : ''}`}>
         <section className="sidebarContainer">
+        <div className="close-menu flex justify-end   md:hidden "><i class="fa-solid fa-xmark" onClick={() => setShow(!show)}></i></div>
           <section className="sidebarMenu">
             <h3 className="sidebarTitle">Dashboard</h3>
             <ul className="sidebarList">
@@ -32,7 +33,6 @@ export default function Sidebar({ show , setShow  }) {
               </NavLink>
             </ul>
           </section>
-
           <section className={`sidebarMenu ${darkMood ? 'dark-mode' : ''}`}>
             <h3 className="sidebarTitle">Quick Menu</h3>
             <ul className="sidebarList">
@@ -67,8 +67,6 @@ export default function Sidebar({ show , setShow  }) {
           </section>
         </section>
       </section>
-
-   
     </>
   );
 }

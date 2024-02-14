@@ -8,8 +8,6 @@ import { darkmoodContext } from './Contexts/darkmood';
 
 
 
-
-
 export default function App() {
 
 const router = useRoutes(routes)

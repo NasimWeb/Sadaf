@@ -19,7 +19,7 @@ export default function WidgetSm() {
 
               return (
               <li key={user.id} className="widgetSmListItem">
-                <img src={user.avatar} className="widgetSmImg" />
+                {/* <img src={user.avatar} className="widgetSmImg" /> */}
                 <div className="widgetSmUser">
                   <span className="widgetSmUserName">{user.username}</span>
                   <span className="widgetSmUserTitle">{user.status}</span>

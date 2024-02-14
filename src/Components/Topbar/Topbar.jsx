@@ -50,11 +50,11 @@ export default function Topbar({show , setShow}) {
             <div className="topbarIcon">
               <SettingsIcon />
             </div>
-            <img
+            {/* <img
               src="./src/assets/Images/bg-header.jpg"
               alt="profile"
               className="topbarAvatar"
-            />
+            /> */}
           </section>
         </section>
       </section>
